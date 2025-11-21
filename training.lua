@@ -5,14 +5,14 @@
 
 
 
---[[Outputs and Comments
+-- Outputs and Comments
 print("Hello" .. "Jack") -- Concatenate with .. 
 -- Comments are with two dashes
 --[[This is a 
 Multi line 
-Comment use brackets to use multiple lines]] 
-
---[[Data Types and Variables
+Comment use brackets to use multiple lines 
+]]
+-- Data Types and Variables
 nil, nil == nothing
 number = 42 This is a Number Variable
 float = 3.14 This is a Float Variable
@@ -30,11 +30,11 @@ name = nil -- makes name = to nothing, or reassign it
 This is a multi-line string
 
 local old = true
-]]
 
---[[See What Type
-make something global by leaving out local before the variable or function]]
---[[Math in Lua
+
+-- See What Type
+make something global by leaving out local before the variable or function
+-- Math in Lua
 local str = "22" 
 print(tonumber(str) + 3) makes str a number
 add with +
@@ -61,9 +61,9 @@ math.max(list of numbers) = returns the largest number
 math.sin(number) = sine of number (in radians)
 math.cos(number) = cosine of number (in radians)
 math.tan(number) = tangent of number (in radians)
-math.log(number) = natural logarithm of number]]
+math.log(number) = natural logarithm of number
 
---[[Strings in Lua
+-- Strings in Lua
 print(#string) = length of string
 string.upper(string) = makes string uppercase
 string.lower(string) = makes string lowercase
@@ -88,9 +88,9 @@ string.rep(string, number) = repeats string number times
 string.format(format, values) = formats string with values
 string.match(string, pattern) = matches pattern in string
 string.reverse(string) = reverses string
-]]
 
---[[If Statements
+
+-- If Statements
 local true, false = true, nil
 if true then
     print("This is true")
@@ -155,9 +155,9 @@ end
 print(old)
 
 local old = age > 30 and true or false
-]]
 
---[[Loops in Lua
+
+-- Loops in Lua
 for i = 1, 10, 1 do
     print(i)
 end
@@ -200,9 +200,9 @@ repeat
     x = x + 1
 until x > 10
 (repeats at least once, then checks condition)
-]]
 
---[[User Input in Lua
+
+-- User Input in Lua
 io.write("Enter your name: ") = prints without new line
 local ans = io.read() = reads input from user
 print("Hello " .. ans)
@@ -218,9 +218,9 @@ if tonumber(ans) == true_ans then
 else 
     print("Your Answer: " .. ans .. " is incorrect.")
 end
-]]
 
---[[Tables in Lua
+
+-- Tables in Lua
 local arr = {10, true, "hello world", 2.4}
 
 print(arr[index]) = prints value at index (starts at 1)
@@ -253,9 +253,9 @@ for i = 1, #arr do
     end
 end
 (nested loops to access multi-dimensional table)
-]]
 
---[[Functions in Lua
+
+-- Functions in Lua
 local function displayAge(age)
     age = age or 5
     print("You are " .. age .. " years old")
@@ -322,9 +322,9 @@ local function sum(...) -- makes it a table of arguments
 end
 
 print(sum(10, 5, 10))
-]]
 
---[[Co-routines in Lua
+
+-- Co-routines in Lua
 local function routine_1 = coroutine.create(
     function ()
         for i = 1, 10 , 1 do
@@ -354,9 +354,9 @@ if coroutine.status(routine_1) ~= "suspended" then
 end
 
 print(coroutine.status(routine_1))
-]]
 
---[[Working with Files in Lua --
+
+-- Working with Files in Lua --
 io.output("myFile.txt") -- makes new file or overwrites the file if it already exists
 io.input("myFile.txt") -- opens file for reading
 
@@ -382,9 +382,9 @@ file:write("\nJack: He is old.\nnetsu: Yeah, I know.")
 file:close()
 
 print(reads)
-]]
 
---[[ The OS Module in Lua
+
+-- The OS Module in Lua
 local past = os.time({
     year = 2000,
     month = 10,
@@ -421,17 +421,17 @@ for i = 1, 10 do
         os.exit() -- exits program
     end
 end
-]]
+
 
 -- Custom Modules in Lua
--- local mod = require("mymath")
+ local mod = require("mymath")
 
--- print(mod.add(5, 10))
--- print(mod.power(2, 5))
--- print(mod.multiply(4, 6))
+ print(mod.add(5, 10))
+ print(mod.power(2, 5))
+ print(mod.multiply(4, 6))
 
---[[OOP in Lua
-Object Oriented Programming:
+-- OOP in Lua
+-- Object Oriented Programming:
 local t = {
     name = "Jack",
     age = 18,
@@ -496,9 +496,9 @@ end
 
 print(lassy.breed)
 lassy:bark()
-]]
 
---[[ MetaMethods in Lua
+
+-- MetaMethods in Lua
 local function addTableValues(x, y)
     return x.num + y.num
 end
@@ -542,4 +542,3 @@ __lt = <
 __le = <=
 __gt = >
 __ge = >=
-]]
