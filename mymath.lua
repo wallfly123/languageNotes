@@ -1,4 +1,4 @@
---[[mmath = {}
+[mmath = {}
 
 function mmath.add(x, y)
     return x + y
@@ -20,4 +20,3 @@ function mmath.divide(num1, num2)
 end
 
 return mmath
-]]
