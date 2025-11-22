@@ -8,14 +8,15 @@
 -- Outputs and Comments
 print("Hello" .. "Jack") -- Concatenate with .. 
 -- Comments are with two dashes
---[[This is a 
+--[[
+This is a 
 Multi line 
 Comment use brackets to use multiple lines 
 ]]
 -- Data Types and Variables
 nil, nil == nothing
-number = 42 This is a Number Variable
-float = 3.14 This is a Float Variable
+number = 42 -- This is a Number Variable
+float = 3.14 -- This is a Float Variable
 string = "This is a String Variable"
 boolean = true This is a Boolean Variable (true or false)
 table = { "This", "is", "a", "Table" }
@@ -27,13 +28,16 @@ local name = "jack"
 name = nil -- makes name = to nothing, or reassign it
 
 
-This is a multi-line string
-
+[[
+This
+is
+a
+multi-line
+string
+]]
 local old = true
 
-
--- See What Type
-make something global by leaving out local before the variable or function
+-- make something global by leaving out local before the variable or function
 -- Math in Lua
 local str = "22" 
 print(tonumber(str) + 3) makes str a number
@@ -199,7 +203,7 @@ repeat
     print("Hey there!")
     x = x + 1
 until x > 10
-(repeats at least once, then checks condition)
+-- (repeats at least once, then checks condition)
 
 
 -- User Input in Lua
@@ -252,7 +256,7 @@ for i = 1, #arr do
         print(arr[i][j])
     end
 end
-(nested loops to access multi-dimensional table)
+-- (nested loops to access multi-dimensional table)
 
 
 -- Functions in Lua
@@ -430,8 +434,10 @@ end
  print(mod.power(2, 5))
  print(mod.multiply(4, 6))
 
--- OOP in Lua
--- Object Oriented Programming:
+--[[
+OOP in Lua
+Object Oriented Programming:
+]]
 local t = {
     name = "Jack",
     age = 18,
