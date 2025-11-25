@@ -1,4 +1,4 @@
-[mmath = {}
+mmath = {}
 
 function mmath.add(x, y)
     return x + y
